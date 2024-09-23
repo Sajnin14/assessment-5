@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn for daisyUi + tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog for Donation Page</title>
+</head>
+<body id="blog-body">
+    <header>
+        <nav class="w-full p-5 bg-red-50 flex justify-between mb-10">
+            <div>
+              <button class="btn bg-lime-300 py-2 px-5 font-bold">Home</button>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="./assets/logo.png" alt="">
+                <h2 class="font-bold text-xl">Donate Bangladesh</h2>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="">
+                <p class="text-xl font-semibold">7000</p>
+                <p class="text-xl font-semibold">BDT</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-10/12 mx-auto">
+        
+        <div class="flex items-center gap-3 my-8">
+            <h1 class="text-2xl font-bold">Important FAQ</h1>
+            <ion-icon name="help-circle-outline" class="text-5xl font-bold text-orange-400"></ion-icon>
+        </div>
+        
+
+        <div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <!-- setup for icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
