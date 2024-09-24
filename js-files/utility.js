@@ -1,12 +1,13 @@
 
 function getInputValue(id){
     const inputDonateAmount = parseFloat(document.getElementById(id).value);
-    if(inputDonateAmount < 0 || isNaN(inputDonateAmount)){
-        alert('Invalid Donate Amount');
-        return;
-    }
+    // if(inputDonateAmount <= 0 || isNaN(inputDonateAmount)){
+    //     alert('Invalid Donate Amount');
+    //     return;
+    // }
 
-    return inputDonateAmount;
+      return inputDonateAmount;
+
 
 }
 
@@ -26,6 +27,10 @@ function historyContainer(){
    const history = document.getElementById('history-container');
    return history;
 }
+
+
+
+
     
     
 

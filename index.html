@@ -19,8 +19,8 @@
 
 </head>
 <body id="home-body" class="mx-auto">
-    <header class="sticky top-0 z-10 bg-white pb-7">
-        <nav class="w-full p-5 bg-red-50 flex justify-between mb-10">
+    <header class="sticky top-0 z-10 bg-white pb-4">
+        <nav class="w-full p-4 bg-red-50 flex justify-between mb-10">
             <div>
              <button class="btn bg-lime-300 py-2 px-5 font-bold"><a href="blog.html">Blog</a></button>
             </div>
@@ -46,27 +46,45 @@
 
     <main id="main-container">
        <!-- container-1 -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-10 my-7 w-10/12 mx-auto border rounded-xl p-4">
-            <div>
-                <img src="./assets/feni.png" class="w-full">
-            </div>
-
-            <div>
-                <button class="btn">
-                    <img src="./assets/coin.png" alt="">
-                    <p id="donating-amount1" class="text-xl">100</p>
-                    <p class="text-xl">BDT</p>
-                </button>
-
-                <h1 id="camp-1" class="text-2xl font-bold my-3">Flood Relief in Feni,Bangladesh</h1>
-                <p class="text-gray-500 text-lg">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-4 w-10/12 mx-auto border rounded-xl p-4">
+                <div>
+                    <img src="./assets/feni.png" class="w-full">
+                </div>
 
                 <div>
-                    <input id="donat-input1" type="text" placeholder="Write Donation Ammount"
-                    class="w-full p-3 border rounded-lg my-2">
-                    <button id="donate1-btn" class="btn bg-lime-300 py-3 font-bold w-full">Donate Now</button>
+                    <button class="btn">
+                        <img src="./assets/coin.png" alt="">
+                        <p id="donating-amount1" class="text-xl">100</p>
+                        <p class="text-xl">BDT</p>
+                    </button>
+    
+                    <h1 id="camp-1" class="text-2xl font-bold my-3">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="text-gray-500 text-lg">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Please consider donating today to assist those in urgent need.</p>
+    
+                    <div class="relative">
+                        <input id="donat-input1" type="text" placeholder="Write Donation Ammount"
+                        class="w-full p-3 border rounded-lg my-2">
+                        <button id="donate1-btn" class="btn bg-lime-300 py-3 font-bold w-full">Donate Now</button>
+                        
+                        <!-- popup card start -->
+                        <div id="popup-1" class="absolute bottom-3/4 text-center bg-white border border-gray-500 py-7 rounded-lg shadow-md space-y-3 px-8 hidden">
+                            <h2 class="text-3xl font-bold">Congrats!</h2>
+                            <img src="./assets/coin.png" class="mx-auto">
+                            <p>You have Donated for Humankind</p>
+                            <h3 class="text-xl font-bold">Successfully</h3>
+                            <button id="close-popup1" class="btn btn-sm text-gray-600">Close Confirmation</button>
+                         </div>
+
+                         <!-- popup card end -->
+                        
+                    </div>
                 </div>
             </div>
+            
+            
+            
+             
         </section>
 
 
@@ -86,10 +104,21 @@
                 <h1 id="camp-2" class="text-2xl font-bold my-3">Flood at Noakhali, Bangladesh</h1>
                 <p class="text-gray-500 text-lg"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-                <div>
+                <div class="relative">
                     <input id="donat-input2" type="text" placeholder="Write Donation Ammount"
                     class="w-full p-3 border rounded-lg my-2">
                     <button id="donate2-btn" class="btn bg-lime-300 py-3 font-bold w-full">Donate Now</button>
+
+                    <!-- popup card start -->
+                    <div id="popup-2" class="absolute bottom-3/4 text-center bg-white border border-gray-500 py-7 rounded-lg shadow-md space-y-3 px-8 hidden">
+                        <h2 class="text-3xl font-bold">Congrats!</h2>
+                        <img src="./assets/coin.png" class="mx-auto">
+                        <p>You have Donated for Humankind</p>
+                        <h3 class="text-xl font-bold">Successfully</h3>
+                        <button id="close-popup2" class="btn btn-sm text-gray-600">Close Confirmation</button>
+                     </div>
+
+                     <!-- popup card end -->
                 </div>
             </div>
         </section>
@@ -110,15 +139,26 @@
                 <h1 id="camp-3" class="text-2xl font-bold my-3">Aid for Injured in the Quota Movement</h1>
                 <p class="text-gray-500 text-lg">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
 
-                <div>
+                <div class="relative">
                     <input id="donat-input3" type="text" placeholder="Write Donation Ammount"
                     class="w-full p-3 border rounded-lg my-2">
                     <button id="donate3-btn" class="btn bg-lime-300 py-3 font-bold w-full">Donate Now</button>
+
+                    <!-- popup card start -->
+                    <div id="popup-3" class="absolute bottom-3/4 text-center bg-white border border-gray-500 py-7 rounded-lg shadow-md space-y-3 px-8 hidden">
+                        <h2 class="text-3xl font-bold">Congrats!</h2>
+                        <img src="./assets/coin.png" class="mx-auto">
+                        <p>You have Donated for Humankind</p>
+                        <h3 class="text-xl font-bold">Successfully</h3>
+                        <button id="close-popup3" class="btn btn-sm text-gray-600">Close Confirmation</button>
+                     </div>
+                     <!-- popup end -->
                 </div>
             </div>
         </section>
 
     </main>
+
 
     <!-- section for history -->
 
