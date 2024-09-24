@@ -1,13 +1,12 @@
 
 function getInputValue(id){
-    const inputDonateAmount = parseFloat(document.getElementById(id).value);
-    // if(inputDonateAmount <= 0 || isNaN(inputDonateAmount)){
-    //     alert('Invalid Donate Amount');
-    //     return;
-    // }
+    const inputDonateAmount = document.getElementById(id).value;
+    if(isNaN(inputDonateAmount)){
+      return;
+    }
 
-      return inputDonateAmount;
-
+    const inpautDonateNumber = parseFloat(inputDonateAmount);
+    return inpautDonateNumber;
 
 }
 
